@@ -1,0 +1,12 @@
+package ITJ_assignments;
+
+public class first_program {
+	public static void main(String args[])
+	{
+		System.out.println("hello this is my first code here at ITJ");
+		System.out.println("Jadoo");
+		char i = 0;
+		System.out.println(i);
+	}
+}
+
