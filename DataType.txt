@@ -1,0 +1,33 @@
+package poonam;
+
+public class DataType {
+
+	public static void main(String[] args) {
+		
+		byte m =33;
+		System.out.println("My byte value  " +m);
+		
+		int a= 10;
+		System.out.println("The value of " +a);
+		
+		float abc = 5.8f;
+        System.out.println("the value of  " +abc);
+        
+        String Name = "poonam";
+        System.out.println("Name " +Name);
+        
+         boolean wxz = true;
+         System.out.println( wxz);
+         
+         char fname = 'p';
+         System.out.println("the value of fanme  " + fname);
+         
+         double Rating  = 8.33333;
+         System.out.println("the rating value  " +Rating);
+         
+         long PhoneNo =6789003333l;
+         System.out.println("phone number  "  +PhoneNo);
+         
+	}
+
+}
