@@ -1,0 +1,44 @@
+package poonam;
+
+public class TypeCasting {
+
+	public static void main(String[] args) {
+		//widling
+		 int numInt = 56;
+		    double numDouble =numInt;
+		    System.out.println("numInt " +numInt );
+		    System.out.println("numDouble " +numDouble);
+		
+              int hiint =67;
+              float hifloat =hiint;
+            	System.out.println("hiint " +hiint);
+            	System.out.println(  "hifloat " +hifloat);
+            	
+            	long dflong =455667l;
+            	double dfdouble =dflong;
+            	System.out.println("dflong "+dflong);
+            	System.out.println( " dfdoble "+dfdouble);
+            	
+            	System.out.println();
+            	
+            	//norrwing
+            	
+    		    double myDouble =5.777;
+    		    int myInt = (int)myDouble;
+    		    System.out.println( "myDouble "+myDouble);
+    		    System.out.println( " myInt "+myInt);
+    		
+                  float mnfloat =6.7f;
+                  int mnint =(int)mnfloat;
+                	System.out.println( " mnfloat "+mnfloat);
+                	System.out.println(" mnint "+mnint);
+                	
+                double dsdouble =45.5667;
+                	long dslong = (long)dsdouble;
+                	System.out.println("dsdouble "+dsdouble);
+                	System.out.println("dslong "+dslong);
+            	
+            	
+	}
+
+}
