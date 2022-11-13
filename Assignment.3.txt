@@ -1,0 +1,224 @@
+Assigement [poonam sonawane][10 nov 2022]
+1)
+package com.javaBasics;
+ public class adding {
+	 public static void main(String[] args){
+			adding A1 = new adding();
+			A1.add(7 ,8);
+			A1.add("Hi"," poonam");
+		}
+	 
+	static void add(int a,int b) {
+	int c= a+b;
+	System.out.println("The addition:"+c);
+	}  
+	static void add(String a, String b) {
+		String c= a+b;
+		System.out.println("The addition of string: "+c);
+	
+	}  
+	}  
+2)
+package poonam;
+
+import java.util.Scanner;
+public class Overload {
+	public static void main(String[] args) {
+		char operator;
+	    Double side1, side2, side3 ,side4,area;//side1=breath, side2=height,side3=length,side4=radius.
+	    
+	    Scanner sc= new Scanner(System.in);
+
+		System.out.println("select the Area you can find T,R,C.");
+		    operator =sc.next().charAt(0);
+	 
+           System.out.println("Enter the first side : ");
+             side1=sc.nextDouble();
+             
+             System.out.println("Enter the Second side: ");
+             side2=sc.nextDouble();
+
+             System.out.println("Enter the Thired side: ");
+             side3=sc.nextDouble();
+
+             System.out.println("Enter the fourth side: ");
+             side4=sc.nextDouble();
+             
+             switch (operator) {
+             
+             case 'T':
+            	 area=8.0*side1*side2;
+            	 System.out.println(side1 + " + " + side2 + " = " +area);
+ 		        break;
+ 		        
+             case 'R':
+              area= side3* side1;
+              System.out.println(side3 + " * " + side1 + " = " + area);
+		        break;
+ 		        
+             case 'c':
+            	 area= 3.14 * side4 * side4;
+            	 System.out.println(3.14 + " * " + side4 + " = " + area);
+            	 break;
+            	 
+             default:
+ 		        System.out.println("Invalid operator!");
+ 		        break;
+             }
+             sc.close();
+	}
+}
+
+3)
+package com.javaBasics;
+
+ class Bank{
+ public static void main(String[] args) {
+		SBI sc=new SBI();
+		ICIC sd=new ICIC();
+		AXIS sf=new AXIS();
+		System.out.println("SBI Rate of Interest: "+sc.interest());  
+		System.out.println("ICICI Rate of Interest: "+sd.interest());  
+		System.out.println("AXIS Rate of Interest: "+sf.interest());  
+ }
+ 
+	int interest() {
+		return(0);
+}}
+class SBI{
+	int interest() {
+	return(8);
+}}
+class ICIC{
+	int interest() {
+		return(7);
+	}}
+class AXIS{
+	int interest() {
+		return(9);
+	}}
+4)
+package com.javaBasics;
+
+public class Inheritance {
+	public static void main(String[] args) {
+		Car sc = new Car();
+		sc.EngineType();
+		sc.Tires();
+		
+		System.out.println("-------");
+		
+		Maruti sd =new Maruti();
+		sd.Average();
+		sd.colour();
+		sd.EngineType();
+		sd.Tires();
+		sd.seats();
+		
+	System.out.println("---------");
+	
+	Renault sf =new Renault();
+	   sf.EngineType();
+	   sf.Average();
+	   sf.seats();
+	   sf.Tires();
+	   sf.colour();
+		
+	}
+ 
+}
+class Car{
+	public void Tires() {
+		System.out.println("The no of Tires is :4");
+	}
+	public void EngineType() {
+		System.out.println("The EngineType name is motar ");
+	}
+	}
+class Maruti extends Car{
+	public void Tires() {
+		System.out.println("The no of Tires is 2 ");
+	}
+	public void EngineType() {
+		System.out.println("The EngineType name is tata");
+	}
+	public void colour() {
+		System.out.println("The colour of car is white");
+	}
+		public void seats() {
+			System.out.println("The number of seats i 6");
+		}
+		public void Average() {
+			System.out.println("The average of car is 1622cc");
+		}
+	}
+class Renault extends Car{
+	public void Tires() {
+		System.out.println("The no of Tires is 4 ");
+	}
+	public void EngineType() {
+		System.out.println("The EngineType name is Mahindra");
+	}
+	public void colour() {
+		System.out.println("The colour of car is Black");
+	}
+		public void seats() {
+			System.out.println("The number of seats i 4");
+		}
+		public void Average() {
+			System.out.println("The average of car is 2122cc");
+		}
+	}
+5)
+package com.javaBasics;
+
+public class StateOverriding {
+	public static void main(String[] args) {
+		State sc = new State();
+		sc.Minister();
+		sc.ViceMinister();
+		
+	District Sd = new District();
+	 Sd.Minister();
+	 Sd.ViceMinister();
+	}
+
+}
+class State{
+	public void Minister(){
+		System.out.println("The Minister of Maharashtra is Eknath shinde.");
+	}
+	public void ViceMinister() {
+		System.out.println("The ViceMinister of Maharastra is Devendra Fandnvi");
+	}
+	}
+class District extends State{
+	public void Minister(){
+		System.out.println("The Minister of Maharashtra is Eknath shinde.");
+	}
+	public void ViceMinister() {
+		System.out.println("The ViceMinister of Maharastra is Devendra Fandnvi");
+	}
+	
+}
+
+
+
+	
+
+	
+
+
+		        
+ 		        
+
+            	 
+             
+             
+             
+             
+     	 
+
+
+
+	
