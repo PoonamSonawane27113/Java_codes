@@ -1,0 +1,105 @@
+//Assignment(21/10/22)poonam Sonawane
+
+//1)Assignment
+
+package com.javaBasics;
+
+public class Eligibility {
+
+	public static void main(String[] args) {
+		  int  age =17;
+		  
+		  if(age>18) {
+			  System.out.println("The  voter are eligible");
+		  }
+		 else {
+			 System.out.println("The voter is not eligible");
+			}
+		 }
+		  
+		 
+				 
+
+	}
+
+
+//2)Assignment
+
+package com.javaBasics;
+
+public class length {
+
+	public static void main(String[] args) {
+
+		String atr ="My name is Anthony Gonsalves.";
+		System.out.println("The length of the atr string is: " + atr.length());
+		System.out.println("index of Anthony is: " + atr.indexOf("Anthony"));
+		
+		if(atr.length()>28) {
+			System.out.println("My name i Anthony");
+		}else {
+			System.out.println("successfully changed");
+		}
+		
+		
+		
+
+	}
+
+}
+
+//3)Assignment
+
+package com.javaBasics;
+
+public class swap {
+
+	public static void main(String[] args) {
+		//using third 3 variable
+		String atr1 ="java is Eassy";
+        String atr2 ="coding easly in java";
+        
+        System.out.println(atr1+"," +atr2);
+         
+        String atr3;
+        atr3=atr1;
+        atr1=atr2;
+        atr2=atr3;
+        
+        
+        System.out.println(atr1+"," +atr2);
+        
+        
+        System.out.println();
+        
+        
+	}
+
+}
+
+
+//4)Assignment
+
+package com.javaBasics;
+
+import java.util.Scanner;
+
+public class swapwithout {
+
+	public static void main(String[] args) {
+		int a,b;
+		System.out.println("Enter any value");
+		Scanner reg=new Scanner(System.in);
+		a=reg.nextInt();
+		b=reg.nextInt();
+		System.out.println("Before Swaping  "+a+ " "+b);//100 200
+		a=a+b;//a=100+200=300
+		b=a-b;//b=300-200=100
+		a=a-b;//a=300-100=200
+		System.out.println("After Swaping"+a+" "+b);//200 100
+	}
+
+}
+
+
+
