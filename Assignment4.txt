@@ -1,0 +1,236 @@
+Assignment poonam sonawane(2/11/22)
+1)
+package Assignment_3;
+
+import java.util.Scanner;
+
+public class Question1 {
+
+	public static void main(String[] args) {
+		char operator;
+	    Double num1, num2, output;
+
+	    Scanner Sc = new Scanner(System.in);
+
+	    
+	    System.out.println("Choose an operator: +, -, *, or /");
+	    operator = Sc.next().charAt(0);
+
+	  
+	    System.out.println("Enter first number");
+	    num1 = Sc.nextDouble();
+
+	    System.out.println("Enter second number");
+	    num2 = Sc.nextDouble();
+
+	    switch (operator) {
+
+	      
+	      case '+':
+	        output = num1 + num2;
+	        System.out.println(num1 + " + " + num2 + " = " + output);
+	        break;
+
+	      case '-':
+	        output = num1 - num2;
+	        System.out.println(num1 + " - " + num2 + " = " + output);
+	        break;
+
+	      case '*':
+	        output = num1 * num2;
+	        System.out.println(num1 + " * " + num2 + " = " + output);
+	        break;
+
+	      case '/':
+	        output = num1 / num2;
+	        System.out.println(num1 + " / " + num2 + " = " + output);
+	        break;
+
+	      default:
+	        System.out.println("Invalid operator!");
+	        break;
+	    }
+
+	    Sc.close();
+		
+	}
+
+}
+
+2)
+package Assignment_3;
+
+import java.util.Scanner;
+
+public class Question2 {
+
+	public static void main(String[] args) {
+		Scanner Sc = new Scanner(System.in);
+		
+		float b,h,rect,area;
+		
+		b=Sc.nextFloat();
+		h=Sc.nextFloat();
+	    area = (b*h)/2;
+		System.out.println("Area of triangle=" +area);
+		
+		float width =Sc.nextFloat();
+		float height=Sc.nextFloat();
+	    float Area = width*height;
+		System.out.println("Area of rectangle=" +Area);
+		
+		double r =Sc.nextFloat();
+         double pi = 3.14;
+        double AREA = pi*r*r;
+		System.out.println("Area of rectangle=" +AREA);
+	}
+}
+3)
+package Assignment_3;
+
+public class Question3 {
+	public static void main(String[] args) {
+		for(int r=5;r>=1;r--)
+		{
+		for(int c=1;c<=r;c++)
+		{
+		System.out.print(c);
+		}
+		System.out.println();
+	}
+	}
+}
+
+4)
+package Assignment_3;
+public class Question4 {
+	public static void main(String args[])
+	 
+    {
+        int rows =5;
+        
+        
+        int alphabet = 65; 
+        
+        for (int i= 1; i<= rows-1 ; i++)
+        {
+            for (int j=4; j>=i; j--)
+            {
+                 System.out.print((char) (alphabet++) + " ");
+            }
+            System.out.println();
+        }
+     }
+	}
+
+5)
+package Assignment_3;
+
+public class Question5 {
+
+	public static void main(String[] args) {
+        double[] arr = {19, 89, 16, 207.8, 13.90};
+        double total = 0;
+
+        for(int i=0; i<arr.length; i++){
+        	total = total + arr[i];
+        }
+        double average = total / arr.length;
+        
+        System.out.format("The average is: %.3f", average);
+    }
+
+
+	}
+6)
+package Assignment_3;
+
+public class Question6 {
+
+		   public static boolean contains(int[] arr, int item) {
+			      for (int n : arr) {
+			         if (item == n) {
+			            return true;
+			         }
+			      }
+			      return false;
+			   }
+			   public static void main(String[] args) {
+			          int[] my_array1 = {
+			            1789, 2035, 1899, 1456, 2013, 
+			            1458, 2458, 1254, 1472, 2365, 
+			            1456, 2265, 1457, 2456};
+			      System.out.println(contains(my_array1, 2000));
+			      System.out.println(contains(my_array1, 2015));
+			    }
+	}
+7)
+package Assignment_3;
+
+import java.util.Arrays;
+
+public class Question7 {
+	public static void main(String[] args)
+	 {
+	    int[] array_nums = {27, 74, 90, 48, 94};
+		System.out.println("Original Array: "+Arrays.toString(array_nums)); 
+		int max = array_nums[0];
+		int min = array_nums[0];
+		float sum = array_nums[0];
+		for(int i = 1; i < array_nums.length; i++)
+		{
+			sum  += array_nums[i];
+			if(array_nums[i] > max)
+				max = array_nums[i];
+			else if(array_nums[i] < min)
+				min = array_nums[i];
+		}
+		float x = ((sum-max-min) / (array_nums.length - 2));
+		System.out.printf("Compute the average value of an array of integers except the largest and smallest values: %.2f",x);
+		System.out.print("\n");	
+	  }
+	}
+8)
+package Assignment_3;
+
+import java.util.Scanner;
+
+public class Question8 {
+	public static void main(String[] Strings) {
+      double minutesInYear = 60 * 24 * 365;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Input the number of minutes: ");
+
+        double min = input.nextDouble();
+
+        long years = (long) (min / minutesInYear);
+        int days = (int) (min / 60 / 24) % 365;
+
+        System.out.println((int) min + " minutes is approximately " + years + " years and " + days + " days");
+    }
+}
+9)
+package Assignment_3;
+
+import java.util.Scanner;
+
+public class Question9 {
+
+	public static void main(String[] args) {
+        Scanner Sc = new Scanner(System.in);
+        System.out.print("Input six non-negative digits: ");
+        int input = Sc.nextInt();
+        int n1 = input / 100000 % 10;
+        int n2 = input / 10000 % 10;
+        int n3 = input / 1000 % 10;
+        int n4 = input / 100 % 10;
+        int n5 = input / 10 % 10;
+        int n6 = input % 10;
+      System.out.println(n1 + " " + n2 + " " + n3 + " " + n4 + " " + n5 + " " + n6);
+
+    }
+}
+
+
