@@ -1,0 +1,140 @@
+15/9/2000
+Assignment
+
+1)//1.How to swap two numbers without using a third variable? a = 25, b = 36
+package JavaBasic;
+
+public class sandip1 {
+
+	public static void main(String[] args) {
+		int a = 25;
+		int b = 36;
+		System.out.println("String before Swap "+a +b);
+		 a = a + b;
+         b = a - b;
+         a = a - b;
+         System.out.println("String After Swap "+a +b);
+
+	}
+
+}
+2)//2.How to swap two Strings without using a third variable? a = "18" b= "28"
+
+
+package JavaBasic;
+
+public class sandip {
+
+	public static void main(String[] args) {
+		int a = 18;
+		int b = 28;
+		System.out.println("Swap String  "+a +b);
+        int c  = 0;
+         c = a;
+         a = b;
+         b = c;
+         System.out.println("Swap String  "+a +b); 
+	}
+
+}
+
+3)//3.Java program to check if the given number is Prime? (Use scanner to take number that is to be checked, as input from the user)
+package JavaBasic;
+import java.util.Scanner;
+public class prime {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Any no ");
+        int n = sc.nextInt();
+        int flag = 0;
+        for (int i = 2; i < n; i++) {
+            if (n % i == 0) {
+                flag = 1;
+            }
+        }
+        if(flag == 1){
+            System.out.println("The number is not  prime number");
+        }
+        else{
+            System.out.println("The number is  prime number");
+        }
+    }
+}
+
+4)//4.Java Program to check if a vowel is present in the string? (String should be passed as input from the user using scanner)
+package JavaBasic;
+
+import java.util.Scanner;
+
+public class vowel {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Any String");
+		String Name = sc.next();
+		for(int i=0; i<Name.length(); i++) {
+		      if(Name.charAt(i) == 'a'|| Name.charAt(i) == 'e'|| 
+		          Name.charAt(i) == 'i' || Name.charAt(i) == 'o' || 
+		          Name.charAt(i) == 'u')
+		        
+		        System.out.println("Given vowel is " + 
+		            Name.charAt(i)+" at the index " + i);
+		
+		}
+
+	}
+
+}
+
+5)//.Check if a string is palindrome(A palindrome string is one whose reverse is also the same string) 
+
+      Test 2 Input strings : 
+
+      1. "Mary"   //outputs false
+
+      2. "bob"     //outputs true
+
+
+package JavaBasic;
+
+import java.util.Scanner;
+
+public class palindrome {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Any String");
+		String Name = sc.next();
+		 int length = Name.length();   
+	      for ( int i = length - 1; i >= 0; i-- )  
+	         Name = Name + Name.charAt(i);  
+	      if (Name.equals(Name)) { 
+	         System.out.println("string is a palindrome.");  
+	      }
+	      else  {
+	         System.out.println("string isn't a palindrome.");   
+	      }
+
+	}
+
+
+}
+
+6)//6.Find second largest number in an array? (int[] input_array = {12, 4, 5, 2, 5};)
+
+package JavaBasic;
+
+import java.util.Arrays;  
+public class secondLarge{  
+public static int getSecondLargest(int[] a, int total){  
+Arrays.sort(a);  
+return a[total-2];  
+}  
+public static void main(String args[]){  
+int a[]={12,4,5,2,5};  
+
+System.out.println("Second Largest: "+getSecondLargest(a,4));  
+	}
+
+}
+
